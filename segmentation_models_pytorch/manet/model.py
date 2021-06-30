@@ -69,6 +69,7 @@ class MAnet(SegmentationModel):
             depth=encoder_depth,
             weights=encoder_weights,
         )
+        print(self.encoder)
 
         self.decoder = MAnetDecoder(
             encoder_channels=self.encoder.out_channels,
